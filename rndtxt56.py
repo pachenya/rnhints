@@ -38,7 +38,9 @@ def buildrandstr(cnt = 32):
     who   = getrandstr(lwho)
     place = getrandstr(lplace)
     do    = getrandstr(ldo)
-    obj   = getrandstr(lobj)
+    obj1  = getrandstr(lobj)
+    obj2  = getrandstr(lobj)
+    obj3  = getrandstr(lobj)
     fure  = getrandstr(lfure)
     strMeta = getrandstr(lMeta)
     m = strMeta
@@ -47,7 +49,9 @@ def buildrandstr(cnt = 32):
     m = m.replace("%a",akira)
     m = m.replace("%n",do)
     m = m.replace("%d",place)
-    m = m.replace("%o",obj)
+    m = m.replace("%1",obj)
+    m = m.replace("%2",obj)
+    m = m.replace("%3",obj)
     lst.append(m)
     if i % prog == 0:
       print('*',end='')
