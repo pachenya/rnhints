@@ -1,4 +1,4 @@
-# filereadng.py
+# rndtxt56.py
 import random
 import string
 
@@ -20,12 +20,12 @@ def getrandstr(strline):
   return rval
 
 def buildrandstr(cnt = 32):
-  lakira = OpenTextList('a1.txt')
-  lwho   = OpenTextList('a2.txt')
-  lplace = OpenTextList('a3.txt')
-  ldo    = OpenTextList('a4.txt')
-  lobj   = OpenTextList('a5.txt')
-  lfure  = OpenTextList('a6.txt')
+  lakira = OpenTextList('obj01.txt')
+  lwho   = OpenTextList('obj02.txt')
+  lplace = OpenTextList('obj03.txt')
+  ldo    = OpenTextList('obj04.txt')
+  lobj   = OpenTextList('obj05.txt')
+  lfure  = OpenTextList('obj06.txt')
   lMeta  = OpenTextList('aMeta.txt')
   lst = []
   #proguresubaa
@@ -49,9 +49,9 @@ def buildrandstr(cnt = 32):
     m = m.replace("%a",akira)
     m = m.replace("%n",do)
     m = m.replace("%d",place)
-    m = m.replace("%1",obj)
-    m = m.replace("%2",obj)
-    m = m.replace("%3",obj)
+    m = m.replace("%1",obj1)
+    m = m.replace("%2",obj2)
+    m = m.replace("%3",obj3)
     lst.append(m)
     if i % prog == 0:
       print('*',end='')
